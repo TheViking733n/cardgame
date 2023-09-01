@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Game</title>
+    <style>
+        * {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    Home page
+    <h1>Home page</h1>
+    <h2>Email: {{ user.email }}</p>
+    <h2>Name: {{ user.first_name }} {{ user.last_name }}</p>
+    <h2>Username: {{ user.username }}</p>
+    <h2>Profile Picture: <img style="border-radius: 50%;" src="{{ user.socialaccount_set.all.0.get_avatar_url }}"></h2>
+    <h2><a href="logout">Logout</a></h2>
+
+    <hr>
+
+    <h1>Game</h1>
+    <h2><a href="newgame"></a></h2>
 </body>
 </html>

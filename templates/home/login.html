@@ -1,0 +1,20 @@
+{% load socialaccount %}
+<html>
+
+<head>
+    <title>Google Registration</title>
+    <style>
+        * {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <h2><a href="{% provider_login_url 'google' %}">Login with Google</a></h2>
+
+</body>
+
+</html>
