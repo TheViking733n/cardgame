@@ -21,12 +21,13 @@
 
     <hr>
 
-    <h1>Body</h1>
-    <h2>
-        <form action="/room/create" method="POST">
-            {% csrf_token %}
-            <input type="submit" value="Create Room">
-        </form>
-    </h2>
+    <h1>Room Details</h1>
+    <h2>ID: {{ room.id }}</h2>
+    <h2>Creator: {{ room.creator }}</h2>
+    <h2>Players: {{ room.players }}</h2>
+    <h2>Config: {{ room.config }}</h2>
+    <h2>Waiting: {{ room.waiting }}</h2>
+    <h2>Created_at: {{ room.created_at }}</h2>
+    <h2>Updated_at: {{ room.updated_at }}</h2>
 </body>
 </html>
