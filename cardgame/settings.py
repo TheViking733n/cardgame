@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'home',
+    'room',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -158,3 +159,5 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+LOGIN_URL= '/login'
