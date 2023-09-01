@@ -13,6 +13,6 @@ def index(request):
 
 @login_required
 def create(request):
-    return HttpResponse("Not implemented yet")
+    return HttpResponse("Not yet implemented")
 
 
